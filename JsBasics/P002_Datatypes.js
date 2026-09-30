@@ -200,9 +200,134 @@ let studentAddress=null;
 console.log("Address is: "+studentAddress);//null
 console.log(typeof studentAddress);//object
 
+console.log("---------Symbol type-------");
+/*
+- It is used to create unique keys in Js Object
+
+In Js Object is collection of keys and values.
+Ways
+----------
+1.Object literal
+2.Class level Object
+
+3.Constructor function
+4.Prototype based object(Object.create())
+*/
+
+console.log("-------NonPrimitive data types----");
+//Object literal
+let user={};
+console.log(user);//{} empty object
+console.log(typeof user);//object
+
+//Array: dynamic data structure and collection of values we can store with one variable
+let userId=[101,102,103,104];
+console.log(userId);//[ 101, 102, 103, 104 ]
+console.log(typeof userId);//object
+
+//object with key and value
+let person={
+  id:1010,
+  pname:"Sarang"
+}
+
+console.log(person);//{ id: 1010, fname: 'Sarang' }
+console.log(typeof person);//object
+
+/*
+To Access properties form Object
+-----------------------------------
+1. dot notation
+objectName.key
+
+2. bracket notation
+objectName["key"]//string key
+
+*/
+
+console.log(person.id);//1010
+console.log(person[`pname`]);//Sarang
+console.log(person['id']);//1010
+
+//Add new property
+person.address="Mumbai";
+console.log(person);
+
+//Modify any property
+person.id=2020;
+console.log(person);
+
+//delete any property
+delete person.address;
+console.log(person);
 
 
-//Symbol
+console.log("--------------------------");
+//symbol
+let profile1=Symbol("QA");
+console.log(profile1);//Symbol(QA)
+console.log(typeof profile1);//symbol
+
+
+let employee={
+  empName:"Sameer",
+  salary:50000
+}
+console.log(employee);
+
+//Application1(HR) wants to assign some id
+employee.id=1010;
+
+//Application2(Payroll) wants to assign some id
+employee.id=2020;
+
+console.log(employee);
+
+//Symbol type will solve this issue : symbol type will create unique key for same object
+
+let hrId=Symbol("id");//key1
+let payrollId=Symbol("id");//key2
+
+
+//lets use it for object
+employee[hrId]=111;
+employee[payrollId]=222;
+
+console.log(employee);
+//symbol type data ifyou wanted to extract form variable then use: objectName[variablename]
+console.log(employee[hrId]);
+console.log(employee[payrollId]);
+console.log(employee.hrId);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
