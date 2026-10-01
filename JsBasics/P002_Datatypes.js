@@ -269,6 +269,8 @@ console.log(profile1);//Symbol(QA)
 console.log(typeof profile1);//symbol
 
 
+
+
 let employee={
   empName:"Sameer",
   salary:50000
@@ -289,7 +291,7 @@ let hrId=Symbol("id");//key1
 let payrollId=Symbol("id");//key2
 
 
-//lets use it for object
+//lets use it for object: Syntax to assign any value to symbol type variable :objectName[variable]=value
 employee[hrId]=111;
 employee[payrollId]=222;
 
@@ -299,9 +301,33 @@ console.log(employee[hrId]);
 console.log(employee[payrollId]);
 console.log(employee.hrId);
 
+console.log("-------------------");
 
 
+let student1={
+  fname:"Rahul",
+  age:15
+}
 
+let student2={
+  fname:"Smita",
+  age:15
+}
+
+
+console.log(student1);
+console.log(student2);
+
+
+//allocate some unique studentid for every student
+let studenId=Symbol("id");//key
+
+student1[studenId]=101;
+student2[studenId]=201;
+
+
+console.log(student1);
+console.log(student2);
 
 
 

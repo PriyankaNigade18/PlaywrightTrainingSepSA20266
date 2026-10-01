@@ -121,3 +121,124 @@ console.log(emailId);
 
 // function call
 getData();
+
+console.log("---------Function scope-----------------");
+/*
+-Any variable you can declare within function you can access it inside the function
+-function scope means local variable
+-for var type variable function scope is applicable
+
+*/
+
+
+function display()
+{
+    //local variables
+    var automationType="Functional+API";
+    const browser="Chrome";
+    let browserVersion=150;
+
+    console.log(automationType);
+    console.log(browser);
+    console.log(browserVersion);
+    
+}
+
+//call
+display();
+
+console.log("----calling outside-----");
+
+    //console.log(automationType);//ReferenceError: automationType is not defined
+    //console.log(browser);//ReferenceError: browser is not defined
+    //console.log(browserVersion);ReferenceError: browserVersion is not defined
+
+    console.log("-------Block scope-------");
+//Examples: if block, forloop,whileloop
+//Block scope
+    {
+        console.log("Hello");
+        
+    }
+    
+    //let and const are applicable for block scope
+if(true)//here condition is true so this block will run
+{
+    let product="Playwright";
+    const vendor="Microsoft";
+
+    // console.log(product);
+    // console.log(vendor);
+    //console.log("ProductName: "+product+"\nVendor Name is: "+vendor);
+    console.log(product+"\n"+vendor);//\n for next line
+   
+
+}
+
+//console.log(product);//ReferenceError: product is not defined
+//console.log(vendor);//ReferenceError: vendor is not defined
+
+console.log("-----------------------");
+
+//var type Global +function
+var a=10;
+console.log(a);//10
+function test1()
+{ var a=20;
+    console.log(a);//20
+    if(true)
+    {
+        var a=30;
+        console.log(a);//30
+        
+    }
+    console.log(a);//30
+}
+test1();
+
+console.log("--------------");
+//let: global +block
+let b=10;
+console.log(b);//10
+function test2()
+{ 
+    var a=100;
+    let b=20;
+    console.log(b);//20
+    if(true)
+    {
+        let b=30;
+        console.log(b);//30
+        
+    }
+   // let b=40;//Error:Cannot redeclare block-scoped variable 'b'.
+    console.log(b);//20
+}
+
+
+test2();
+
+console.log(a);//10
+//console.log(x);//ReferenceError: x is not defined
+
+console.log("--------------");
+//const: global +block
+const c=10;
+console.log(c);//10
+function test3()
+{     
+    const c=20;
+    console.log(c);//20
+    if(true)
+    {
+        const c=30;
+        console.log(c);//30
+        
+    }
+    //const c=200;//Cannot redeclare block-scoped variable 'c'
+    console.log(c);//20
+}
+test3();
+
+
+

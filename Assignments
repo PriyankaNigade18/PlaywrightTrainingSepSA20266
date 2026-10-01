@@ -1,0 +1,57 @@
+
+Datatype Assignment
+====================
+
+1. Identify the datatype
+Create variables for the following values and identify their datatype:
+- 25
+- "JavaScript"
+- true
+- undefined
+- null
+- 123.45
+- 12345678901234567890n
+- Symbol("id")
+Task: Print both the value and its datatype.
+
+2. Create Variables of Different Datatypes
+Create one variable for each of the following datatypes:
+- String
+- Number
+- Boolean
+- Undefined
+- Null
+- BigInt
+- Symbol
+- Object
+Print all variables
+
+3. Predict the Output
+Without running the code, predict the output:
+console.log(typeof 100);
+console.log(typeof "100");
+console.log(typeof true);
+console.log(typeof undefined);
+console.log(typeof null);
+console.log(typeof 100n);
+
+Then execute the program and compare your answers.
+
+4. Student Information
+Create variables to store:
+- Student name
+- Student age
+- Student percentage
+- Whether the student has completed the course
+- Student's grade
+Use appropriate JavaScript datatypes.
+
+5.Create two variables:
+let userName;
+let userEmail = null;
+Print both values and their datatypes.
+Then answer:
+1. What is the difference between undefined and null?
+2. What does typeof userName return?
+3. What does typeof userEmail return?
+4. Why is typeof null considered unusual in JavaScript?
