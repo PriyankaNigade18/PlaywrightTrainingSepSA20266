@@ -28,12 +28,12 @@ Print all variables
 
 3. Predict the Output
 Without running the code, predict the output:
-console.log(typeof 100);
-console.log(typeof "100");
-console.log(typeof true);
-console.log(typeof undefined);
-console.log(typeof null);
-console.log(typeof 100n);
+console.log(typeof 100); ->number
+console.log(typeof "100");->string
+console.log(typeof true);->boolean
+console.log(typeof undefined);-->undefined
+console.log(typeof null);-->object
+console.log(typeof 100n);-->bigInt
 
 Then execute the program and compare your answers.
 
