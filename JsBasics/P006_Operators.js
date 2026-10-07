@@ -30,6 +30,8 @@ condition?true:false;
 1.&& (AND) 2.||(OR) 3. !(NOT)
 */
 
+
+
 console.log("------Arithemetic Operators--------");
 let num1=100,num2=20;
 let result=num1+num2;
@@ -147,6 +149,189 @@ let k=20;
 let l=k-- + k++;
 console.log(k);//20
 console.log(l);//39
+
+console.log("---Short hand operators------");
+/*
+ +=,-=,*=,/=,%= (x+=1:   x=x+1)
+*/
+
+let t=10;
+console.log(t);//10
+t+=20;//t=t+20;
+console.log(t);//30
+
+let y=100;
+console.log(y);//100
+y-=50;//y=y-50
+console.log(y);//50
+
+let h=10;
+console.log(h);//10
+h*=2;//h=h*2;
+console.log(h);//20
+
+let w=80;
+console.log(w);//80
+w/=4;//w=w/4;
+console.log(w);//20
+
+console.log("------Relational Operators-------");
+/*
+<,<=,>,>=,!==,!===
+
+Equality
+============
+1.loose equality  ==
+--------------------------
+In loose equality value will coerced(type will convert first)and then value compare
+
+2.Strict equality === (Recommended)
+------------------------------------
+here values as it is compare no conversion
+
+Test Data
+==============
+c=99, u=v=102 r=s=79 e=89 f=90
+
+*/
+
+console.log("Greater than > : "+(u>f));//true
+console.log("Greater than equal to >=: "+(u>=v));//true
+console.log(f>=c);//false
+console.log("Less than <: "+(r<e));//true
+console.log("Less than equal to <=: "+(r<=s));//true
+console.log(c<=e);//false
+console.log("Not Equal to != : "+(u!=v));//false
+console.log(r!=c);//true
+
+/*
+document on loose equality
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality
+Equality
+============
+1.loose equality  ==
+--------------------------
+In loose equality value will coerced(type will convert first)and then value compare
+
+2.Strict equality === (Recommended)
+------------------------------------
+here values as it is compare no conversion
+*/
+
+
+console.log("100" == 100);//true
+console.log(undefined == null);//true
+
+
+console.log("100" === 100);//false
+console.log(undefined === null);//false
+
+
+console.log("------Logical Operators-------");
+/*
+c1          c2          &&(AND)         ||(OR)      !c1(NOT)
+true        true         true           true            false
+true        false       false           true            false
+false       true        false           true            true
+false       false       false           false           true
+
+
+Test Data
+==============
+c=99, u=v=102 r=s=79 e=89 f=90
+
+*/
+
+console.log("-----&&-----");
+console.log((c>r) && (u===v));//true
+console.log((f<c) && (c>=v));//false
+console.log((r>=f) && (r===s));//false
+console.log((e>=c) && (e===f));//false
+
+
+
+console.log("-----||-----");
+console.log((c>r) || (u===v));//true
+console.log((f<c) || (c>=v));//true
+console.log((r>=f) || (r===s));//true
+console.log((e>=c) || (e===f));//false
+
+
+console.log("----!(NOT)----");
+
+console.log(u===v);//true
+console.log(!(u===v));//false
+
+/*scenario: testing title of application
+-For string equality use === strict equality operator 
+In Js we dont have any string equality method
+
+*/
+let actTitle="Google";
+let expTitle="GoogleApp";
+console.log("Equality: "+(actTitle === expTitle));//false
+//title is not equality
+console.log("Title is not equal:"+(!(actTitle===expTitle)));//true
+
+
+console.log("-----Ternary Operator----");
+/*
+
+It is short hand operator for If-Else
+Syntax
+======
+condition?true:false;
+
+*/
+
+//age validation scenario
+
+let age=10;
+
+(age>=18)?console.log("Adult"):console.log("minor");
+
+/*
+if(age>=18)
+{
+    console.log("Adult");
+    
+}else
+{
+    console.log("minor");
+    
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
