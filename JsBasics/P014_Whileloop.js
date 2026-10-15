@@ -64,7 +64,7 @@ console.log("Sum of digits: "+sum);
 
 
 console.log("---------------");
-
+//how to reverse any number
 let num1=457356,rm=0,rev=0,temp=num1;
 
 while(num1>0)
@@ -77,16 +77,37 @@ while(num1>0)
 
 console.log(`Reverse number of ${temp} is: ${rev} `);
 
+//how to check number is palindrome(H/W)
+console.log("--------------------");
+
+//How to check number is armstrong number
+
+let num2=153,r,result=0,tp=num2;
+
+while(num2>0)
+{
+    r=num2%10;
+    num2=Math.floor(num2/10);
+    result=result+r*r*r;
+}
+
+if(tp===result)
+{
+    console.log(`${tp} is an Armstrong number`);
+    
+}else
+{
+     console.log(`${tp} is not an Armstrong number`);
+}
 
 
 
 
 
-//how to reverse any number
 
-//how to check number is palindrome
 
-//jow to check number is armstrong number
+
+
 
 
 

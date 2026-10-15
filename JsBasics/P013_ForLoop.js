@@ -10,6 +10,13 @@ Scenarios:
     -calendar/date picker 30 or 31 /28/29
     -dropdown,list,menu with fixed number of options
 
+    Syntax:
+    ===========
+    for(initialization;condition;Inc/Dec)
+    {
+    statement
+    }
+
 2.While loop
 ==============
 - Entry controlled loop
@@ -17,6 +24,15 @@ Scenarios:
 Scenarios:
     -Pagination logic(Webtable automation)
     -pageload timeout logic
+
+    Syntax:
+===============
+Initialization;
+while(condition)
+{
+statements;
+Inc/dec;
+}
 
 3.doWhile loop
 ================
