@@ -302,8 +302,18 @@ if(age>=18)
 }*/
 
 
+console.log(10>5>1);
 
+console.log(Boolean(""));//false
+console.log(Boolean("false"));//true
 
+let t1=10; 
+function test()
+{ 
+console.log(t1); 
+var t1=20;
+} 
+test();
 
 
 
